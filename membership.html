@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membership - Urbanic</title>
+    <link rel="stylesheet" href="membership.css"> <!-- Link to your CSS file -->
+    <style>
+          body 
+        {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #nav 
+        {
+            width: 100%;
+            height: 50px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Add some padding for space on left and right */
+        }
+
+        .left 
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        .left img 
+        {
+            height: 40px; /* Adjust the logo height */
+            width: auto; /* Keep aspect ratio */
+        }
+
+        .mid 
+        {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mid ul
+         {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mid ul li 
+        {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            position: relative; /* Required for the dropdown positioning */
+        }
+
+        .mid ul li a 
+        {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .mid ul li a:hover
+         {
+            background-color: #fff;
+            color: black;
+            transition: 0.3s;
+        }
+
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Position below the parent element */
+            left: 0;
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #ddd;
+            z-index: 1;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a
+         {
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            color: black;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown on hover */
+        .mid ul li:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Styling for text over image */
+        .image-container
+          {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px; /* Optional: Space between images */
+        }
+
+        .image-container img 
+        {
+            width: 100%;
+            height: 700px;
+            display: block;
+        }
+
+        /* Center the text on the image and place it at the bottom */
+        .text-overlay
+         {
+            position: absolute;
+            bottom: 20px; /* Positioning the text at the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Center the text horizontally */
+            text-align: center;
+            color: white; /* White text */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 
+        {
+            margin: 0;
+            font-size: 48px; /* Adjust the size as needed */
+        }
+
+        h5
+         {
+            margin: 5px 0 0;
+            font-size: 18px; /* Adjust the size as needed */
+        }
+
+        /* Styling for the constant "Join In" text */
+        .join-text
+         {
+            position: fixed; /* Stay fixed in the viewport */
+            bottom: 20px; /* Position it 20px from the bottom */
+            right: 20px; /* Position it 20px from the right */
+            color: #ff5733; /* Text color */
+            font-size: 24px; /* Adjust the font size */
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+ <div id="nav">
+   <div class="left">
+    <!-- Add your logo here -->
+    <a href="#">
+    <img src="https://th.bing.com/th/id/OIP.AJI-k0hNcHyeNYBko5Wv1wHaCH?rs=1&pid=ImgDetMain" alt="Logo">
+    </a>
+    </div>
+
+        <div class="mid">
+    <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+                <li>
+                    <a href="#">READY-TO-WEAR</a>
+                    <div class="dropdown-content">
+    <a href="#">View All</a>
+    <a href="#">Dresses</a>
+    <a href="#">Tops & T-Shirts</a>
+    <a href="#">Denim</a>
+    <a href="#">Blouses & Shirts</a>
+    <a href="#">Pants & Jumpsuits</a>
+    <a href="#">Skirts & Shorts</a>
+    <a href="#">Knitwear</a>
+    <a href="#">Blazers & Outerwear</a>
+    <a href="#">Sportswear & Swimwear</a>
+     </div>
+     </li>
+     <li>
+    <a href="#">LOOKBOOK</a>
+    <div class="dropdown-content">
+    <a href="#">Sunshine</a>
+    <a href="#">Football</a>
+    <a href="#">Mermaid</a>
+    <a href="#">Speed</a>
+  </div>
+     </li>
+    <li><a href="social.html">SOCIAL RESPONSIBILITY</a></li>
+
+     <li><a href="#">ABOUT US</a></li> <!-- Link to membership page -->
+            </ul>
+        </div>
+    </div>
+    <!-- Image 1 with text overlay -->
+    <div class="image-container">
+        <img src="membership.jpg" alt="Membership Image 1">
+        <div class="text-overlay">
+            <h1>Urbanic Membership</h1>
+            <h5>Unlock premium benefits and special privileges.<br>Scroll to explore.</h5>
+        </div>
+    </div>
+
+    <!-- Image 2 with text overlay -->
+    <div class="image-container">
+        <img src="M1.jpg" alt="Membership Image 2">
+        <div class="text-overlay">
+            <h1>Redeem points for up to 70-80% OFF</h1>
+            <h5>Your points will be your superpower. Use them to get 70-80% discount on your orders.</h5>
+        </div>
+    </div>
+
+    <!-- Image 3 with text overlay -->
+    <div class="image-container">
+        <img src="M2.jpg" alt="Membership Image 3">
+        <div class="text-overlay">
+            <h1>Urbanic Membership</h1>
+            <h5>Unlock premium benefits and special privileges.<br>Scroll to explore.</h5>
+        </div>
+    </div>
+
+    <!-- Repeat the same structure for each image -->
+    <div class="image-container">
+        <img src="M3.jpg" alt="Membership Image 4">
+        <div class="text-overlay">
+            <h1>Level Up Coupons</h1>
+            <h5>Celebrate every time you go up a level with exclusive coupons.</h5>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="M4.jpg" alt="Membership Image 5">
+        <div class="text-overlay">
+            <h1>Urbanic Membership</h1>
+            <h5>Unlock premium benefits and special privileges.<br>Scroll to explore.</h5>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="M5.jpg" alt="Membership Image 6">
+        <div class="text-overlay">
+            <h1>Birthday Surprise</h1>
+            <h5>Members (Insider or above) get a gift coupon on their special day.</h5>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="M6.jpg" alt="Membership Image 7">
+        <div class="text-overlay">
+            <h1>Monthly Coupons</h1>
+            <h5>Members (Insider or above) get monthly coupons for their monthly wardrobe refresh.</h5>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="M7.jpg" alt="Membership Image 8">
+        <div class="text-overlay">
+            <h1>Free Shipping.</h5>
+            <h5>Members (Maven or above) save on shipping charges with these coupons on orders under ₹990</h5>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="M8.jpg" alt="Membership Image 9">
+        <div class="text-overlay">
+            <h1>1.5x points for Shopping</h1>
+            <h5>Members Maven and above get 1.5x points for every purchase made.</h5>
+        </div>
+    </div>
+
+    <!-- Constant Join In text -->
+    <div class="join-text">Join In</div>
+
+</body>
+</html>

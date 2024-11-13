@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membership - Urbanic</title>
+    <link rel="stylesheet" href="social.css"> <!-- Correct CSS file path -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+         #nav 
+        {
+            width: 100%;
+            height: 50px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Add some padding for space on left and right */
+        }
+
+
+        .left 
+        {
+            display: flex;
+            align-items: center;
+        }
+         .left img 
+        {
+            height: 40px; /* Adjust the logo height */
+            width: auto; /* Keep aspect ratio */
+        }
+
+        .mid 
+        {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mid ul
+         {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mid ul li 
+        {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            position: relative; /* Required for the dropdown positioning */
+        }
+
+        .mid ul li a 
+        {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .mid ul li a:hover
+         {
+            background-color: #fff;
+            color: black;
+            transition: 0.3s;
+        }
+
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Position below the parent element */
+            left: 0;
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #ddd;
+            z-index: 1;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a
+         {
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            color: black;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown on hover */
+        .mid ul li:hover .dropdown-content {
+            display: block;
+        }
+    .video-container
+    {
+       position: relative;
+       width: 100%;
+       overflow: hidden;
+/*       padding-left: 100px;*/
+/*       padding-right: 100px ;*/
+       border-radius: 20%;
+     }
+
+    video 
+    {
+       width: 100%;
+       display: block;
+/*       padding-left: 50px;*/
+/*       padding-right: 50px;*/
+       height: auto;
+     }
+     h1
+     {
+        padding-left:20px;
+     }
+    </style>
+</head>
+<body>
+    <div id="nav">
+   <div class="left">
+    <!-- Add your logo here -->
+    <a href="#">
+    <img src="https://th.bing.com/th/id/OIP.AJI-k0hNcHyeNYBko5Wv1wHaCH?rs=1&pid=ImgDetMain" alt="Logo">
+    </a>
+    </div>
+
+        <div class="mid">
+    <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+                <li>
+                    <a href="#">READY-TO-WEAR</a>
+                    <div class="dropdown-content">
+    <a href="#">View All</a>
+    <a href="#">Dresses</a>
+    <a href="#">Tops & T-Shirts</a>
+    <a href="#">Denim</a>
+    <a href="#">Blouses & Shirts</a>
+    <a href="#">Pants & Jumpsuits</a>
+    <a href="#">Skirts & Shorts</a>
+    <a href="#">Knitwear</a>
+    <a href="#">Blazers & Outerwear</a>
+    <a href="#">Sportswear & Swimwear</a>
+     </div>
+     </li>
+     <li>
+    <a href="#">LOOKBOOK</a>
+    <div class="dropdown-content">
+    <a href="#">Sunshine</a>
+    <a href="#">Football</a>
+    <a href="#">Mermaid</a>
+    <a href="#">Speed</a>
+  </div>
+     </li>
+    <li><a href="social.html">SOCIAL RESPONSIBILITY</a></li>
+
+     <li><a href="#">ABOUT US</a></li> <!-- Link to membership page -->
+            </ul>
+        </div>
+    </div>
+
+    <video muted autoplay loop>
+        <source src="hut.mp4" type="video/mp4" >
+    </video>
+    <br> <br> 
+        <h1>Urbaic Oasis</h1><br><br>
+        <p style="outline-width:1.9;">
+       Urban Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.Urban>Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.Urban Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.</p>
+       <br><br><br><br>
+       <h1>Our Commitment</h1>
+       <h3>'more than just fashion'</h3>
+       <p style="line-height:1.9">
+        Urban Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.Urban>Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.Urban Oasis lies at the intersection of environmental psychology, neuroaesthetics, and bio-inspired design. Grounded in the principles of architecture, neuroscience, and biophilia, it aims to create an artificial representation of nature that can be applied to the urban design of future spaces.</p>
+    <img src="ss.jpeg">
+    <h1>URBANIC SCHOOL-PAATSHALA</h1>
+    <P>Urbanic is a global fashion company headquartered in London, committed to balancing creativity and sustainability through the use of advanced technology. Since our inception, we have been committed to empowering consumers with top-notch fashion that blends innovation and social responsibility.Urbanic is a global fashion company headquartered in London, committed to balancing creativity and sustainability through the use of advanced technology. Since our inception, we have been committed to empowering consumers with top-notch fashion that blends innovation and social responsibility.Urbanic is a global fashion company headquartered in London, committed to balancing creativity and sustainability through the use of advanced technology. Since our inception, we have been committed to empowering consumers with top-notch fashion that blends innovation and social responsibility.Urbanic is a global fashion company headquartered in London, committed to balancing creativity and sustainability through the use of advanced technology. Since our inception, we have been committed to empowering consumers with top-notch fashion that blends innovation and social responsibility.Urbanic is a global fashion company headquartered in London, committed to balancing creativity and sustainability through the use of advanced technology. Since our inception, we have been committed to empowering consumers with top-notch fashion that blends innovation and social responsibility.</P>
+    <img src="urbanic.jpg" height="500px" width="800px">
+
+  
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urbanic</title>
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="social.css">
+    <style type="text/css">
+        *
+         {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body 
+        {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #nav 
+        {
+            width: 100%;
+            height: 50px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Add some padding for space on left and right */
+        }
+
+        .left 
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        .left img 
+        {
+            height: 40px; /* Adjust the logo height */
+            width: auto; /* Keep aspect ratio */
+        }
+
+        .mid 
+        {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mid ul
+         {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mid ul li 
+        {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            position: relative; /* Required for the dropdown positioning */
+        }
+
+        .mid ul li a 
+        {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .mid ul li a:hover
+         {
+            background-color: #fff;
+            color: black;
+            transition: 0.3s;
+        }
+
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Position below the parent element */
+            left: 0;
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #ddd;
+            z-index: 1;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a
+         {
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            color: black;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown on hover */
+        .mid ul li:hover .dropdown-content {
+            display: block;
+        }
+
+        .container-image1 
+        {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container-image1 img
+         {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Flex container for images */
+        .image-container 
+        {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Adjust gap between images */
+            padding: 20px;
+        }
+
+        .image2, .image3, .image4, .image5 {
+            color: yellow;
+            width: 25%;
+            height: 700px; /* Adjust height for consistency */
+            border-radius: 20px;
+            background-color: #F5F5F7; /* Consolidated the background color */
+        }
+
+        /* Ensure images fit properly inside their containers */
+        .image2 img, .image3 img, .image4 img, .image5 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+            border-radius: 20px; /* Matches the container's border-radius */
+        }
+
+        .image6, .image7, .image8 
+        {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image6 img, .image7 img, .image8 img 
+        {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        /* Updated video section */
+        .video9 
+        {
+            width: 100vw; /* 100% of the viewport width */
+            height: 100vh; /* 100% of the viewport height */
+            overflow: hidden; /* Ensures no extra content overflows */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video9 video
+         {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video fills the container while maintaining aspect ratio */
+        }
+
+        .line2 
+        {
+            background-color: white;
+            margin: 0px;
+            padding-top: 20px;
+            display: flex;
+            width: 100%;
+            height: 280px;
+            justify-content: space-evenly;
+        }
+
+        .foot1 {
+            width: 25%;
+            height: 280px;
+            background-color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+   <div class="left">
+    <!-- Add your logo here -->
+    <a href="#">
+    <img src="https://th.bing.com/th/id/OIP.AJI-k0hNcHyeNYBko5Wv1wHaCH?rs=1&pid=ImgDetMain" alt="Logo">
+    </a>
+    </div>
+
+        <div class="mid">
+    <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+                <li>
+                    <a href="#">READY-TO-WEAR</a>
+                    <div class="dropdown-content">
+    <a href="#">View All</a>
+    <a href="#">Dresses</a>
+    <a href="#">Tops & T-Shirts</a>
+    <a href="#">Denim</a>
+    <a href="#">Blouses & Shirts</a>
+    <a href="#">Pants & Jumpsuits</a>
+    <a href="#">Skirts & Shorts</a>
+    <a href="#">Knitwear</a>
+    <a href="#">Blazers & Outerwear</a>
+    <a href="#">Sportswear & Swimwear</a>
+     </div>
+     </li>
+     <li>
+    <a href="#">LOOKBOOK</a>
+    <div class="dropdown-content">
+    <a href="#">Sunshine</a>
+    <a href="#">Football</a>
+    <a href="#">Mermaid</a>
+    <a href="#">Speed</a>
+  </div>
+     </li>
+    <li><a href="social.html">SOCIAL RESPONSIBILITY</a></li>
+
+     <li><a href="about us.html">ABOUT US </a></li> 
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-image1">
+        <img src="1.webp" alt="Image 1">
+    </div>
+
+    <!-- Flex container for images 2, 3, 4, 5 -->
+    <div class="image-container">
+        <div class="image2">
+            <img src="image2.webp" alt="Image 2">
+        </div>
+        <div class="image3">
+            <img src="image3.webp" alt="Image 3">
+        </div>
+        <div class="image4">
+            <img src="image4.webp" alt="Image 4">
+        </div>
+        <div class="image5">
+            <img src="image5.webp" alt="Image 5">
+        </div>
+    </div>
+
+    <div class="image6">
+        <img src="image6.webp" width="100%" height="auto" alt="Image 6">
+    </div>
+
+    <div class="image7">
+        <img src="image7.webp"> 
+    </div>
+
+    <div class="image8">
+        <img src="image8.webp">
+    </div>
+
+    <!-- Full-screen video container -->
+    <div class="video9">
+        <video src="video9.mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="line2">
+        <div class="foot1">
+            <b>Welcome to Urbanic</b>
+            <p>
+                <br><br>Social Responsibility<br><br>Sustainability<br><br>Our Factory<br><br>About Us<br><br>Newsroom 
+            </p>
+        </div>
+        <div class="foot1">
+            <b>Contact Us</b>
+            <p>
+                <br><br>Support: support@urbanic.com<br><br>Legal: legal.india@urbanic.com<br><br>Press: press.india@urbanic.com
+            </p>
+        </div>
+        <div class="foot1">
+            <b>Help</b>
+            <p>
+                <br><br>FAQ<br><br>Size Guide<br><br>Shipping & Delivery<br><br>Returns & Exchanges<br><br>Track Your Order
+            </p>
+        </div>
+        <div class="foot1">
+            <b>Social Media</b>
+            <p>
+                <br><br>Facebook<br><br>Instagram<br><br>Pinterest<br><br>LinkedIn<br><br>Twitter
+            </p>
+        </div>
+    </div>
+</body>
+</html>
